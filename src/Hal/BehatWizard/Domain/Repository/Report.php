@@ -69,11 +69,10 @@ class Report implements Repo_ReportInterface
     {
         $filename = $feature->getFile();
         foreach ($this->reports as $report) {
-            if ($report->getFile() === $feature->getFile()) {
+            if (preg_replace('/[^A-Za-z0-9\-]{1,}/', '-', $report->getName()) .'.feature' === substr($feature->getFile(),strrpos($feature->getFile(),'/')+1)) {
                 return $report;
             }
         }
-
         return new ModelReport(null);
     }
 

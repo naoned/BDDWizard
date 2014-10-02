@@ -61,7 +61,7 @@ $app->register(new Silex\Provider\SessionServiceProvider());
 // translations
 $app->before(function () use ($app) {
     $app->register(new Silex\Provider\TranslationServiceProvider(), array(
-        'locale_fallback'           => 'en',
+        'locale_fallback'           => 'fr',
         'translation.class_path'    => __DIR__. '/../lib/vendor/symfony/src',
     ));
 

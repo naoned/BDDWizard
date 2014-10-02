@@ -135,4 +135,14 @@ class Report implements ReportInterface
         return $this->state->listTestCases();
     }
 
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->state->getName();
+    }
+
 }

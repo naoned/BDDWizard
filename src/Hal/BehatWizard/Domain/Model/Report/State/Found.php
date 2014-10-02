@@ -61,6 +61,16 @@ class Found implements StateInterface
     }
 
     /**
+     * Get content of the name of report file
+     *
+     * @return return string
+     */
+    public function getName()
+    {
+        return (string) $this->xml['name'];
+    }
+
+    /**
      * Get content of the report file
      *
      * @return return string
