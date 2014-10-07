@@ -107,4 +107,17 @@ class NotFound implements StateInterface
         return array();
     }
 
+
+
+    /**
+     * Get duration
+     *
+     * @return float
+     */
+    public function getName()
+    {
+        return 0;
+    }
+
+
 }
